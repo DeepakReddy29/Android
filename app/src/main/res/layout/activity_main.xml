@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFF00"
+
+    tools:context=".MainActivity">
+
+<TextView
+    android:id="@+id/txt1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp"
+    android:layout_marginLeft="10dp"
+    android:textSize="20dp"
+    android:textStyle="bold"
+    android:textColor="#C50707"
+    android:text="name:-"/>
+
+    <EditText
+        android:id="@+id/edt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/txt1"
+        android:textColor="#C50707"
+        android:hint="name"
+        android:textStyle="bold"
+        android:layout_marginTop="21dp"/>
+
+
+    <TextView
+        android:layout_below="@+id/txt1"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sex:-"
+        android:textColor="#C50707"
+        android:textStyle="bold"/>
+
+
+
+    <RadioGroup
+        android:id="@+id/RG1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/RdBtn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:textColor="#C50707"
+            android:layout_marginTop="49dp"
+            android:layout_marginLeft="60dp"/>
+        <RadioButton
+            android:id="@+id/RdBtn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:textColor="#C50707"
+            android:layout_toRightOf="@+id/RdBtn1"
+            android:layout_marginLeft="60dp"/>
+
+        <RadioButton
+            android:id="@+id/RbBtn3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TransGender"
+            android:textColor="#C50707"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="60dp"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/checktxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Books u Want to buy :-"
+        android:textColor="#C50707"
+        android:textStyle="bold"
+        android:layout_below="@+id/RG1"/>
+
+    <CheckBox
+        android:id="@+id/cck1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RG1"
+        android:text="java"
+        android:textColor="#C50707"
+        android:layout_toRightOf="@+id/checktxt"/>
+
+    <CheckBox
+        android:id="@+id/cck2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RG1"
+        android:text="Kotlin"
+        android:textColor="#C50707"
+        android:layout_toRightOf="@+id/cck1"/>
+
+    <CheckBox
+        android:id="@+id/cck3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RG1"
+        android:text="python"
+        android:textColor="#C50707"
+        android:layout_toRightOf="@+id/cck2"/>
+    <CheckBox
+        android:id="@+id/cck4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cck1"
+        android:text="javascript"
+
+        android:layout_toRightOf="@+id/checktxt"
+        android:textColor="#C50707"/>
+    <Button
+        android:id="@+id/btnca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cck4"
+        android:text="Submit"
+      android:layout_centerHorizontal="true"/>
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnca"
+        android:textColor="#C50707"
+
+        android:id="@+id/Output"></EditText>
+
+</RelativeLayout>
